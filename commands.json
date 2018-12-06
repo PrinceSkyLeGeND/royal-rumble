@@ -4,13 +4,13 @@ if(command === 'cookie')
 {
 
 let user = message.mentions.users.first();
-let razon = args.split(' ').slice(1).join(' ');
+let reason = args.split(' ').slice(1).join(' ');
 
 if(!user) return message.channel.send('Select a user.');
     
-if(!razon){
-  razon ='Ninguno';
+if(!reason){
+  reason ='Nothing';
 
 }
-message.channel.send('**'+ user.username +',** you got a 🍪 from **'+message.author.username+'**\n\n**Because:** '+razon+'\n(づ｡◕‿‿◕｡)づ:･ﾟ✧ 🍪'); 
+message.channel.send('**'+ user.username +',** you got a 🍪 from **'+message.author.username+'**\n\n**Because:** '+reason+'\n(づ｡◕‿‿◕｡)づ:･ﾟ✧ 🍪'); 
     }
