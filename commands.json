@@ -5,7 +5,7 @@ if(command === 'cookie') {
     let user = message.mentions.users.first();
     let reason = args.split(' ').slice(1).join(' ');
 
-    if(!user) {
+    if(user) {
         return message.channel.send('Select a user.');
     }
     
